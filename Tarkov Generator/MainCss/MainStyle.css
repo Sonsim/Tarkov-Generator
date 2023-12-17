@@ -1,0 +1,248 @@
+
+
+#body {
+    background-image: linear-gradient(180deg, rgb(59, 59, 59), black);
+    background-color: rgb(48, 48, 48);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: Bender;
+    src: url(../Font/Bender/Jovanny\ Lemonad\ -\ Bender-Light.otf)
+}
+
+#app {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 10% 87% 3%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+                    "head head"
+                    "nav main"
+                    "nav main";
+    
+    
+    
+
+}
+
+button{
+    font-family: Bender;
+    background-color: black;
+    color: white;
+}
+input[type="number"]{
+    font-family: Bender;
+    background-color: black;
+    border: none;
+    color: white;
+    width: 100%;
+}
+::placeholder {
+    color: #FFC000;
+  }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#app>header{
+    grid-area: head;
+    color: rgb(216, 208, 208);
+    display: flex;
+    justify-content: center;
+    font-family: Bender;
+  
+}
+#app>nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Bender;
+    color: white;   
+}
+.player {
+    display: none;
+}
+.maps {
+    display: none;
+}
+.show-hide-dropdown {
+    display: block;
+}
+#app>main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Bender;
+    color: rgb(216, 208, 208);
+    margin-top: 2%;
+}
+.inputs {
+    font-family: Bender;
+
+    margin: 1%;
+    width: 20%;
+    color: white;
+}
+#levelInput{
+    color: #FFC000;
+    border: none;
+}
+.mapinput {
+    display: flex;
+    flex-direction: row;
+    color: #FFC000;
+
+    width: 100px;
+    height: 5vh;
+}
+#loadout {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 33%, 33%, 33%;
+    grid-template-rows: 30%, 18%, 18%, 18% 18%;
+    grid-template-areas: 
+        "heads heads heads"
+        "body body body"
+        "weapon weapon weapon"
+        "pocket pocket pocket"
+        "map map map";
+    
+    
+}
+#head{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    grid-area: heads;
+    margin-left: 10%;
+    }
+#bodygear{
+    display: flex;
+    flex-direction: row;
+    grid-area: body;
+    height: 20vh;
+    margin-left: 5%;
+    }
+#weapon {
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+    grid-area: weapon;
+    margin-left: 10%;
+    
+}
+#pockets {
+    display: flex;
+    flex-direction: row;
+    grid-area: pocket;
+    margin-left: 20%;
+    height: 50%;
+}
+#map{
+    display: flex;
+    flex-direction: row;
+
+}
+#totalpricetext{
+    margin-left: 10%;
+}
+#headwear {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#ears-img{
+    object-fit: contain;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    border-radius: 2%;
+    
+    
+}
+#ears{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+}
+#headware-img{
+    object-fit: contain;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    border-radius: 2%;
+
+}
+#facecover{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#armor{
+    display: flex;
+    flex-direction: column;
+}
+#armor-png {
+    object-fit: contain;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    border-radius: 2%;
+    
+}
+#rig {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#backpack {
+    
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#rig-png{
+    object-fit: contain;
+    height: 100%;
+    border-radius: 2%;
+    
+}
+#backpack-img{
+    object-fit: contain;
+    height: 100%;
+    border-radius: 2%;
+ 
+}
+#onsling{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#onback{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#slingweapon-img{
+    object-fit: contain;
+    border-radius: 2%; 
+}
+
+#pocket1, #pocket2, #pocket3, #pocket4{
+    height: 100%;
+
+}
+a {
+    color: rgb(216, 208, 208);
+    text-decoration: none;
+}
+
+
